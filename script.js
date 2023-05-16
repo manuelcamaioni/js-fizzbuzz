@@ -3,12 +3,12 @@ const ulElement = document.querySelector('ul');
 
 for(let i = 1; i <= 100; i++){
     const liElement = document.createElement('li'); // creo una variabile con tag <li> </li> vuota per ogni iterazione
-    
+
     // ? document.querySelector('li').style.listStyleType = none; non funziona
 
-    // * popolo la variabile in base al risultato della condizione!
+    // ! popolo la variabile in base al risultato della condizione!
 
-    if(i % 3 === 0 && i % 5 === 0){
+    if(i % 3 === 0 && i % 5 === 0){  //* i % 3 vuol dire che i è divisibile per tre quindi il resto è 0
        liElement.innerHTML = `FizzBuzz`;    // se rispetta la condizione, il contenuto diventa questa stringa
        liElement.classList.add('red');      // aggiungo una classe all'elemento html, nel caso rispettasse questa condizione
 
@@ -24,6 +24,6 @@ for(let i = 1; i <= 100; i++){
         liElement.innerHTML = i;            // altrimenti prende il valore di i a n iterazione
     }
     
-    ulElement.append(liElement);            // stampo il valore al termine della condizione nella pagina html, in una variabile js con                                         all'interno un elemento html, in questo caso <ul> </ul>
+    ulElement.append(liElement);            // stampo sia il tag che il valore(.outerHTML) al termine della condizione nell'html, all'interno di <ul>
 }
 
