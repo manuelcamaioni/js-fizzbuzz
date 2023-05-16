@@ -9,3 +9,7 @@
 .blue{
     color: blue;
 }
+
+li{
+    list-style-type: none;
+}
