@@ -17,10 +17,7 @@ body{
     color: white;
 }
 
-li{
-    list-style-type: none;
-}
-
 ul{
     text-align: center;
+    list-style-type: none;
 }

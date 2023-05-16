@@ -3,9 +3,6 @@ const ulElement = document.querySelector('ul');
 
 for(let i = 1; i <= 100; i++){
     const liElement = document.createElement('li'); // creo una variabile con tag <li> </li> vuota per ogni iterazione
-
-    // ? document.querySelector('li').style.listStyleType = none; non funziona
-
     // ! popolo la variabile in base al risultato della condizione!
 
     if(i % 3 === 0 && i % 5 === 0){  //* i % 3 vuol dire che i è divisibile per tre quindi il resto è 0
