@@ -22,6 +22,7 @@ for(let i = 1; i <= 100; i++){
     }
     else{
         liElement.innerHTML = i;            // altrimenti prende il valore di i a n iterazione
+        liElement.classList.add('white');
     }
     
     ulElement.append(liElement);            // stampo sia il tag che il valore(.outerHTML) al termine della condizione nell'html, all'interno di <ul>
