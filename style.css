@@ -1,5 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(80, 85, 215);
+    background: linear-gradient(110deg, #ac6cff 60%, #6b2be2 60%);
+    height: 100vh;
 }
 .red{
     color: red;
@@ -18,6 +25,10 @@ body{
 }
 
 ul{
-    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
     list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
 }
